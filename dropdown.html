@@ -1,0 +1,115 @@
+<!--Made with fun by Kalema Deo Uganda -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>dropdown</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="dropdown.css"/>
+	<script src="dropdown.js"></script>
+</head>
+<body>
+	
+<h1>Makechanges to satsify your desires</h1>
+<div class="pricing-container">
+	<div class="pricing">
+		<h4>Sole Proprietor</h4>
+		<h1>$19.99</h1>
+		<small>per month</small>
+		<ul>
+			<li>100 invoices</li>
+			<li>Custom scripting & scheduling</li>
+			<li>Payment & accounting software integration</li>
+		</ul>
+		<button>Start Free Trial</button>
+	</div>
+	<div class="pricing highlight">
+		<h4>Small Business</h4>
+		<small class="green">Most Popular</small>
+		<h1>$49.99</h1>
+		<small>per month</small>
+		<ul>
+			<li>300 invoices</li>
+			<li>Custom scripting & scheduling</li>
+			<li>Payment & accounting software integration</li>
+		</ul>
+		<button>Start Free Trial</button>
+	</div>
+	<div class="pricing">
+		<h4>Enterprise</h4>
+		<h1>$99.99</h1>
+		<small>per month</small>
+		<ul>
+			<li>500 invoices</li>
+			<li>Custom scripting & scheduling</li>
+			<li>Payment & accounting software integration</li>
+		</ul>
+		<button>Start Free Trial</button>
+	</div>
+</div>
+
+<!-- SOCIAL PANEL HTML -->
+<div class="social-panel-container">
+	<div class="social-panel">
+		<p>Created with <i class="fa fa-heart"></i> by
+			<a target="_blank" href="https://facebook.com/Kalemalcolm">Kalema Deo</a></p>
+		<button class="close-btn"><i class="fas fa-times"></i></button>
+		<h4>Get in touch on</h4>
+		<ul>
+			<li>
+				<a href="https://medium.com/@deokalema" target="_blank">
+					<i class="fab fa-medium"></i>
+				</a>
+			</li>
+			<li>
+				<a href="https://twitter.com/DeoJjuuko?s=09" target="_blank">
+					<i class="fab fa-twitter"></i>
+				</a>
+			</li>
+			<li>
+				<a href="https://linkedin.com/in/jjuuko-deogratious-966b94132" target="_blank">
+					<i class="fab fa-linkedin"></i>
+				</a>
+			</li>
+			<li>
+				<a href="https://facebook.com/Kalemalcolm" target="_blank">
+					<i class="fab fa-facebook"></i>
+				</a>
+			</li>
+			<li>
+				<a href="https://instagram.com/kalemadev" target="_blank">
+					<i class="fab fa-instagram"></i>
+				</a>
+			</li>
+		</ul>
+	</div>
+</div>
+<button class="floating-btn">
+	Get in Touch
+</button>
+
+<div class="floating-text">
+	Part of <a href="" target="_blank">JjamTeam</a>
+</div>
+<script type="text/javascript">
+	
+
+// INSERT JS HERE
+
+
+// SOCIAL PANEL JS
+const floating_btn = document.querySelector('.floating-btn');
+const close_btn = document.querySelector('.close-btn');
+const social_panel_container = document.querySelector('.social-panel-container');
+
+floating_btn.addEventListener('click', () => {
+	social_panel_container.classList.toggle('visible')
+});
+
+close_btn.addEventListener('click', () => {
+	social_panel_container.classList.remove('visible')
+});
+
+
+</script>
+</body>
+</html>
